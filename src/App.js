@@ -1,6 +1,8 @@
-import React from 'react'
-import { Router, Route } from 'react-router-dom'
-import Home from './pages/Home/index'
+import React from 'react';
+//import { Routes, Route } from 'react-router-dom';
+//import { Router, Route } from 'react-router-dom';
+//import Home from './pages/Home/Home';
+import Header from './components/Header/Header';
 /*import About from './pages/About/index'
 import Product from './pages/Product/index'
 import Header from './components/Header/index'
@@ -9,12 +11,13 @@ import Error from './components/Error/index'*/
 
 function App() {
     return (
-        <Router>
-            <Route path="/">
-                <Home />
-            </Route>
-        </Router>
+    
+        
+            
+        <Header />
+                
+        
     );
 }
 
-export default App
+export default App;

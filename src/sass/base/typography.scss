@@ -4,3 +4,19 @@
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0;
+    }
+
+a {
+    text-decoration: none;
+    color: #000000;
+
+    &:visited {
+        text-decoration: none;
+        color: #000000;
+    }
+}
