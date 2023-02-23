@@ -1,7 +1,10 @@
+import AboutBanner from "../../components/AboutBanner"
 
 function About() {
     return(
-        console.log("voici la page A propos")
+        <>
+            <AboutBanner />
+        </>
     )
 }
 
