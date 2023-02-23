@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px){
+
+a {
+    color: #FF6060;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header_logo {
+    width: 145px;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+}

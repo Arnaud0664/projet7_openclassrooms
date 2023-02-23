@@ -1,6 +1,12 @@
+import Banner from "../../components/Banner";
+
+
+
 function Home() {
     return (
-        console.log("voici l'accueil")
+        <Banner />
+        
+        
     )
 }
 

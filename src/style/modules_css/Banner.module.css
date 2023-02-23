@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px){
+
+.banner {
+    border-radius: 10px;
+    height: 111px;
+    width: 335px;
+    overflow: hidden;
+    position: absolute;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.img_banner {
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+h1 {
+    width: 220px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
