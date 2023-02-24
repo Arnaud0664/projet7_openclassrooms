@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+
+.error {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    color: #ff6060;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.error_number {
+    height: 120px;
+    font-size: 96px;
+    font-weight: bolder;
+}
+
+.error_text {
+    Width: 100%;
+    height: 220px;
+    font-size: 18px;
+    font-weight: 700;
+}
+}
