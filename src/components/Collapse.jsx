@@ -3,7 +3,7 @@ import Chevron from "../assets/flecheBas.png";
 import styles from "../style/modules_css/Collapse.module.css";
 
 function Collapse (props) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false); //useRef est comme une « boîte » qui pourrait contenir une valeur modifiable dans sa propriété .current.
     const collapseRef = useRef(); //get infos of the opened Collapse
 
     return (
