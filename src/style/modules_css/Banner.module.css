@@ -3,9 +3,9 @@
 .banner {
     border-radius: 10px;
     height: 111px;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     padding: 10px 16px;
     margin-bottom: 20px;
     align-items: center;

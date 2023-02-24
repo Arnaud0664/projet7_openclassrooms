@@ -7,17 +7,17 @@ import styles from "../../style/modules_css/Home.module.css"
 function Home() {
     return (
         <>
-            <section className="bannerSection">
+            
                 <Banner />
-            </section>
-            <section className= {styles.cardSection}>
+            
+            <div className= {styles.cardSection}>
                 {datas.map((product) => {
                     return (
                         <Card key={product.id} cover={product.cover} title={product.title}/>   
                     )
                 })}
 
-            </section>
+            </div>
         </>
     )
 }
