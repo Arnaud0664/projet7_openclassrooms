@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+
+.tagsContainer {
+    display: flex;
+}    
+
+.tags { 
+width: 115px;
+Height: 25px;
+border-radius: 10px;
+background-color: #ff6060;
+}
+}
