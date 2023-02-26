@@ -1,9 +1,10 @@
 import styles from '../style/modules_css/Tags.module.css';
 
-function Tags() {
+function Tags(props) {
+    console.log(props);
     return (
-        <div className= {styles.tagsContainer}>
-            <span className={styles.tags}></span>
+        <div>
+            <span className={styles.tags}>{props.content}</span>
         </div>
     )
 }
