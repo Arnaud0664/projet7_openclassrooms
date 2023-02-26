@@ -9,7 +9,7 @@ function Collapse (props) {
     return (
         <div className= {styles.collapse}>
             <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
-                <h2 className= {styles.h2}>{props.aboutTitle}</h2>
+                <h2 className= {styles.h2Collapse}>{props.aboutTitle}</h2>
                 <img
 					className={isOpen ? styles.rotated : styles.chevron}
 					src={Chevron}

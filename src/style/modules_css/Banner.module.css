@@ -21,7 +21,7 @@
     z-index: -1;
 }
 
-h1 {
+.h1Banner {
     width: 220px;
     color: white;
     font-size: 24px;

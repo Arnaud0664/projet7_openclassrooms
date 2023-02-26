@@ -14,21 +14,21 @@ function Product() {
 	if (product === undefined) return <Navigate to="/error" />
     
     const tags = product.tags;
+     
     return(
         <>
-            <section key= {urlParams.id} className= {styles.tagsBlock}>
-            
-                    <> 
+            <div>
+                <h1 className= {styles.h1Product}>{product.title}</h1>
+                <h2 className= {styles.h2Product}>{product.location}</h2>
+            </div>
+            <div key= {urlParams.id} className= {styles.tagsBlock}>  
                     {tags.map((tag) => {
                         return (   
                             <Tags key= {tag} content= {tag}/>
                             
                         )
                     })}   
-                    </> 
-                
-          
-            </section>
+            </div>
         </>
     )
 }

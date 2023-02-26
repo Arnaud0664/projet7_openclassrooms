@@ -5,7 +5,7 @@ function Banner() {
     return (
         <div className= {styles.banner}>
             <img src= {banner_img} alt= "paysage de falaises" className= {styles.banner_img} />
-            <h1>Chez vous, partout et ailleurs</h1>
+            <h1 className= {styles.h1Banner}>Chez vous, partout et ailleurs</h1>
         </div>
     )
 }
