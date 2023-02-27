@@ -1,5 +1,13 @@
 @media screen and (max-width: 768px){
 
+.collapseBlock_about {
+    height: 400px;
+}
+
+.collapseBlock_product {
+    height: 300px;
+}
+
 .collapse .toggle {
     width: 100%;
     background: #ff6060;
@@ -15,11 +23,17 @@
     margin: 31px auto 0;
 }    
     
-.h2Collapse {
+.h3 {
     font-size: 13px;
     font-weight: 500;
 }
-      
+
+.collapse .content_block {
+    height: 0px; 
+    overflow: hidden; 
+    transition: height ease 0.3s;
+}
+
 .collapse .content {
     color: #ff6060;
     background: #f7f7f7;
@@ -34,26 +48,16 @@ p {
     font-size: 12px;
     font-weight: 400;
 }
-    
-.collapse .content_parent {
-    height: 0px; /** hidding content by default */
-    overflow: hidden; /** dealing with overflow */
-    transition: height ease 0.3s; /** easing the content opening*/
-}
-    
+      
 .chevron {
     width: 20px;
     transform: rotate(0deg);
     transition: 0.1s 0.1s ease-in-out;
 }
     
-.rotated {
+.rotation {
     transform: rotate(180deg);
     transition: 0.1s ease-in-out;
-}
-
-.aboutContainer {
-    height: 300px;
 }
 }
 
@@ -69,7 +73,7 @@ p {
     height: 47px;
 }
 
-h2 {
+h3 {
     font-size: 24px;
     font-weight: 500; 
 }

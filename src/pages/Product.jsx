@@ -1,5 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
-//import Collapse from '../components/Collapse';
+import Collapse from '../components/Collapse';
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
 import Host from '../components/Host';
@@ -14,8 +14,14 @@ function Product() {
 	
     const product = datas.find(({ id }) => id === urlParams.id);
 	if (product === undefined) return <Navigate to="/error" />
-    const tags = product.tags;
-     
+    
+    const equipments = product.equipments;
+    const equipmentsList = equipments.map((element, index) =>
+        <li key={index} className= {styles.li}>
+            {element}
+        </li>
+    );
+
     return(
         <>
 
@@ -23,18 +29,24 @@ function Product() {
                 <h1 className= {styles.h1Product}>{product.title}</h1>
                 <h2 className= {styles.h2Product}>{product.location}</h2>
             </div>
-            <div key= {urlParams.id} className= {styles.tagsBlock}>  
-                    {tags.map((tag) => {
-                        return (   
-                            <Tags key= {tag} content= {tag}/> // content = props
-                            
-                        )
-                    })}   
+            <div className= {styles.tagsBlock}>  
+                {product.tags.map((tag) => {
+                    return (   
+                        <Tags key= {tag} content= {tag}/> // content = props
+                        
+                    )
+                })}   
             </div>
             <div className= {styles.hostBlock}>
                 <Rating score= {product.rating}/>
-                <Host name= {product.host.name} picture= {product.host.picture}/> 
-                
+                <Host name= {product.host.name} picture= {product.host.picture}/>   
+            </div>
+            <div className= {styles.collapseBlock_product}>
+                <div>
+                    <Collapse productTitle= 'Description' description= {product.description}/>
+                    <Collapse productTitle= 'Equipements' description= {equipmentsList}/>
+                </div>
+
             </div>
         </>
     )

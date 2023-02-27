@@ -8,7 +8,7 @@ function About() {
     return(
         <>
             <AboutBanner />
-			<div className= {styles.aboutContainer}>
+			<div className= {styles.collapseBlock_about}>
 				{aboutArray.map((rule, id) => (
 					<Collapse
 						key={id}

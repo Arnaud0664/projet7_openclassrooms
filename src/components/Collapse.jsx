@@ -3,21 +3,21 @@ import Chevron from "../assets/flecheBas.png";
 import styles from "../style/modules_css/Collapse.module.css";
 
 function Collapse (props) {
-    const [isOpen, setIsOpen] = useState(false); //useRef est comme une « boîte » qui pourrait contenir une valeur modifiable dans sa propriété .current.
+    const [isOpen, setIsOpen] = useState(false); //useRef = equivalent de "this" en js
     const collapseRef = useRef(); //get infos of the opened Collapse
 
     return (
         <div className= {styles.collapse}>
             <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
-                <h2 className= {styles.h2Collapse}>{props.aboutTitle}</h2>
+                <h3 className= {styles.h3}>{props.aboutTitle}{props.productTitle}</h3>
                 <img
-					className={isOpen ? styles.rotated : styles.chevron}
+					className={isOpen ? styles.rotation : styles.chevron}
 					src={Chevron}
 					alt="chevron"
 				/>
             </button>
             <div
-                className= {styles.content_parent}
+                className= {styles.content_block}
                 ref={collapseRef}
                 // conditionnal height: if opened then actual height as defined by parent.ref DOM element, 
                 // 0px otherwise - note that in REACt style is an Objet
@@ -31,7 +31,7 @@ function Collapse (props) {
                 }
             >
                 <div className= {styles.content}>
-                    <p className= {styles.p}>{props.aboutText}</p>
+                    <p className= {styles.p}>{props.aboutText}{props.description}{props.content}</p>
                 </div>
             </div>
         </div>
