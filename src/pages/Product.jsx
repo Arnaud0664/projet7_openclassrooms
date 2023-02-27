@@ -2,6 +2,7 @@ import { useParams, Navigate } from "react-router-dom";
 //import Collapse from '../components/Collapse';
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
+import Host from '../components/Host';
 
 //import Slide from '../components/Slide';
 import styles from '../style/modules_css/Product.module.css';
@@ -13,7 +14,6 @@ function Product() {
 	
     const product = datas.find(({ id }) => id === urlParams.id);
 	if (product === undefined) return <Navigate to="/error" />
-    
     const tags = product.tags;
      
     return(
@@ -31,8 +31,9 @@ function Product() {
                         )
                     })}   
             </div>
-            <div className= {styles.host}>
-                <Rating score= {product.rating}/> 
+            <div className= {styles.hostBlock}>
+                <Rating score= {product.rating}/>
+                <Host name= {product.host.name} picture= {product.host.picture}/> 
                 
             </div>
         </>
