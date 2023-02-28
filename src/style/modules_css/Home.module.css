@@ -1,8 +1,6 @@
 @media screen and (max-width: 768px){
 
 .cardSection {
-    display: flex;
-    justify-content: center;
     width: 100%;
     border-radius: 10px;
     padding-bottom: 20px;
