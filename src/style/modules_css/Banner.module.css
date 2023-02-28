@@ -1,5 +1,4 @@
-@media screen and (max-width: 768px) {
- 
+
 .banner {
     border-radius: 10px;
     height: 111px;
@@ -28,14 +27,25 @@
     font-weight: 500;
 }
 
+@media screen and (min-width: 768px){
 
-
-
-
-
-
-
-
-
-
+.banner {
+    height: 223px;
+    
 }
+
+.h1Banner {
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 75px;
+}
+}
+
+
+
+
+
+
+
+
