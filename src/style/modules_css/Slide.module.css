@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+
+.slideBlock { 
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    Height: 255px;
+    margin: 0 auto;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 5px;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    width: 11.67px;
+    height: 19.8px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    width: 11.67px;
+    height: 19.8px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.pictures { 
+    position: absolute;
+    width: 100%;
+    Height: 100%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 5px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+}

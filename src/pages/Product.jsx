@@ -3,10 +3,10 @@ import Collapse from '../components/Collapse';
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
 import Host from '../components/Host';
-
-//import Slide from '../components/Slide';
+import Slide from '../components/Slide';
 import styles from '../style/modules_css/Product.module.css';
 import datas from '../datas/datas.json';
+
 
 
 function Product() {
@@ -24,7 +24,9 @@ function Product() {
 
     return(
         <>
-
+            <div>
+                <Slide pictures= {product.pictures}/>
+            </div>
             <div>
                 <h1 className= {styles.h1Product}>{product.title}</h1>
                 <h2 className= {styles.h2Product}>{product.location}</h2>
