@@ -5,6 +5,7 @@
 }
 
 body {
+  max-width: 1400px;
   margin: 5% 5% 0 5%;
   font-family: 'Montserrat', sans-serif;
 }

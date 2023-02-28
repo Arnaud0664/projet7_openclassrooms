@@ -7,11 +7,8 @@ import Slide from '../components/Slide';
 import styles from '../style/modules_css/Product.module.css';
 import datas from '../datas/datas.json';
 
-
-
 function Product() {
 	const urlParams = useParams();
-	
     const product = datas.find(({ id }) => id === urlParams.id);
 	if (product === undefined) return <Navigate to="/error" />
     
@@ -35,7 +32,6 @@ function Product() {
                 {product.tags.map((tag) => {
                     return (   
                         <Tags key= {tag} content= {tag}/> // content = props
-                        
                     )
                 })}   
             </div>
@@ -48,7 +44,6 @@ function Product() {
                     <Collapse productTitle= 'Description' description= {product.description}/>
                     <Collapse productTitle= 'Equipements' description= {equipmentsList}/>
                 </div>
-
             </div>
         </>
     )

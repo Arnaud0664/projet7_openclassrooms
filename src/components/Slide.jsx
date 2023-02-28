@@ -3,7 +3,6 @@ import styles from '../style/modules_css/Slide.module.css';
 import leftArrow from '../assets/slideG.png';
 import rightArrow from '../assets/slideD.png';
 
-
 function Slide(props) {
     const pictures = props.pictures;
     const length = pictures.length;
@@ -19,9 +18,6 @@ function Slide(props) {
         const newIndex = isFirstSlide ? length -1 : currentIndex -1;
         setCurrentIndex(newIndex);
     }
-    
-
-    
     
     return (
         <div className= {styles.slideBlock}>

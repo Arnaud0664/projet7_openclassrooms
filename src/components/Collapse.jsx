@@ -31,7 +31,7 @@ function Collapse (props) {
                 }
             >
                 <div className= {styles.content}>
-                    <p className= {styles.p}>{props.aboutText}{props.description}{props.content}</p>
+                    <p className= {styles.collapse_text}>{props.aboutText}{props.description}{props.content}</p>
                 </div>
             </div>
         </div>

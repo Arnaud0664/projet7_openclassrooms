@@ -28,6 +28,10 @@
     justify-content: space-between;
 }
 
+.collapseBlock_product {
+    height: 210px;
+}
+
 li {
     list-style: none;
 }

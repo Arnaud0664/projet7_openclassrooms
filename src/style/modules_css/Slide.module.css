@@ -24,7 +24,7 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    left: 32px;
+    left: 5px;
     width: 11.67px;
     height: 19.8px;
     z-index: 1;
@@ -35,7 +35,7 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    right: 32px;
+    right: 5px;
     width: 11.67px;
     height: 19.8px;
     z-index: 1;
