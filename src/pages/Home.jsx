@@ -8,15 +8,17 @@ function Home() {
     return (
         <>
             <Banner />
-            {datas.map((product) => {
-                return (
-                    <div className= {styles.cardSection} key={product.id}>
-                        <Link to= {`/product/${product.id}`}>
+            <div className= {styles.cardSection}>
+                {datas.map((product) => {
+                    return (
+                        <Link key={product.id} to= {`/product/${product.id}`}>
                             <Card cover={product.cover} title={product.title}/>
-                        </Link>   
-                    </div>
-                )
-            })}
+                        </Link>    
+                    )
+            })}  
+                </div>
+                
+            
         </>
     )
 }

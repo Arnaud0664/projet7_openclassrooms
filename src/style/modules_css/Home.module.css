@@ -1,21 +1,19 @@
-@media screen and (max-width: 768px){
 
 .cardSection {
     width: 100%;
-    border-radius: 10px;
     padding-bottom: 20px;
-    flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px){
 
-
-
-
-
-
-
-
-
-
-
+.cardSection {
+    background: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    padding-top: 75px;
+    margin-top: 40px;
+    gap: 3px;
+}
 }
