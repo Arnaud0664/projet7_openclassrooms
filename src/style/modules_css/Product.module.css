@@ -25,7 +25,7 @@
 }
 
 .collapseBlock_product {
-    height: 210px;
+    height: 275px;
 }
 
 li {
@@ -57,6 +57,12 @@ height: 25px;
     margin-top: 90px;
     flex-direction: column-reverse;
     align-items: flex-end;
+}
+
+.collapseBlock_product {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
 }
 }
 

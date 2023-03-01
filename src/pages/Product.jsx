@@ -42,10 +42,8 @@ function Product() {
                 </div>
             </div>
             <div className= {styles.collapseBlock_product}>
-                <div>
                     <Collapse productTitle= 'Description' description= {product.description}/>
                     <Collapse productTitle= 'Equipements' description= {equipmentsList}/>
-                </div>
             </div>
         </>
     )
