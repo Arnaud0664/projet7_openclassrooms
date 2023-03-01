@@ -24,20 +24,22 @@ function Product() {
             <div>
                 <Slide pictures= {product.pictures}/>
             </div>
-            <div>
-                <h1 className= {styles.h1Product}>{product.title}</h1>
-                <h2 className= {styles.h2Product}>{product.location}</h2>
-            </div>
-            <div className= {styles.tagsBlock}>  
-                {product.tags.map((tag) => {
-                    return (   
-                        <Tags key= {tag} content= {tag}/> // content = props
-                    )
-                })}   
-            </div>
-            <div className= {styles.hostBlock}>
-                <Rating score= {product.rating}/>
-                <Host name= {product.host.name} picture= {product.host.picture}/>   
+            <div className= {styles.desktopDisplay}>
+                <div>
+                    <h1 className= {styles.h1Product}>{product.title}</h1>
+                    <h2 className= {styles.h2Product}>{product.location}</h2>
+                </div>
+                <div className= {styles.tagsBlock}>  
+                    {product.tags.map((tag) => {
+                        return (   
+                            <Tags key= {tag} content= {tag}/> // content = props
+                        )
+                    })}   
+                </div>
+                <div className= {styles.hostBlock}>
+                    <Rating score= {product.rating}/>
+                    <Host name= {product.host.name} picture= {product.host.picture}/>   
+                </div>
             </div>
             <div className= {styles.collapseBlock_product}>
                 <div>

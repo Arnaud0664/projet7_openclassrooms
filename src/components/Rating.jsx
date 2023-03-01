@@ -1,4 +1,4 @@
-import styles from '../style/modules_css/Banner.module.css';
+import styles from '../style/modules_css/Rating.module.css'; 
 import fullStar from '../assets/pleine.svg';
 import emptyStar from '../assets/vide.svg';
 
