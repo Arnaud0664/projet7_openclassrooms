@@ -1,4 +1,3 @@
-@media screen and (max-width: 768px) {
 
 .slideBlock { 
     display: flex;
@@ -7,6 +6,7 @@
     width: 100%;
     Height: 255px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .slider {
@@ -17,7 +17,6 @@
     right: 0%;
     top: 0%;
     bottom: 0%;
-    border-radius: 5px;
 }
 
 .leftArrow {
@@ -55,12 +54,30 @@
     object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
 
+.slideBlock { 
+    height: 415px;
+    border-radius: 25px;
+}
 
+.slider_number {
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding-left: 50%;
+    top: 86%; 
+}
 
+.leftArrow {
+    width: 46.68px;
+    height: 79.2px;
+}
 
-
-
-
-
+.rightArrow {
+    width: 46.68px;
+    height: 79.2px;
+}
 }

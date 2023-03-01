@@ -42,6 +42,11 @@ function Slide(props) {
                             className= {styles.pictures} 
                         />
                     }
+                    {index === currentIndex && (
+						<span className= {styles.slider_number}>
+							{currentIndex + 1}/{length}
+						</span>
+					)}
                 </div>
             ))}
         </div>
