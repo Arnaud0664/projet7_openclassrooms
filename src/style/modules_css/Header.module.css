@@ -12,20 +12,29 @@ a {
 }
 
 .header_logo {
-    width: 43%;
+    width: 145px;
+    height: 47px;
 }
 
 .header_nav {
     display: flex;
-    justify-content: space-around;
-    width: 43%;
-    font-size: 0.8em;
+    justify-content: space-between;
+    width: 130px;
+    font-size: 12px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px){
 
 .header_nav {
-    font-size: 1.5em;
+    width: 290px;
+    font-size: 24px;
+    text-transform: none;
+}
+
+.header_logo {
+    width: 210.32px;
+    height: 68px;
 }
 }

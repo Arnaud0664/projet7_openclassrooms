@@ -8,6 +8,7 @@ function Home() {
     return (
         <>
             <Banner />
+            <div className= {styles.home_section}>
             <div className= {styles.cardSection}>
                 {datas.map((product) => {
                     return (
@@ -18,7 +19,7 @@ function Home() {
             })}  
                 </div>
                 
-            
+            </div>  
         </>
     )
 }
