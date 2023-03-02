@@ -6,11 +6,18 @@
 
 body {
   max-width: 1400px;
-  margin: 5% 5% 0 5%;
+  margin: 5%;
   font-family: 'Montserrat', sans-serif;
 }
 
 main {
   max-width: 1400px;
   margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+body {
+  margin: 3%;
+}
 }

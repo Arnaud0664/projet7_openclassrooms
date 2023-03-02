@@ -8,8 +8,8 @@ function Error() {
         <>
             <div className= {styles.error}>
                 <p className={styles.error_number}>404</p>
-                <p className={styles.error_text}>Oups! La page que vous demandez n'existe pas.</p>
-                <Link to="/">
+                <p className={styles.error_text}>Oups! La page que <br /> vous demandez n'existe pas.</p>
+                <Link className= {styles.error_link} to="/">
 				    Retourner sur la page d’accueil
 			    </Link>
             </div>
