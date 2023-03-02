@@ -3,7 +3,6 @@ import Collapse from "../components/Collapse";
 import aboutArray from "../datas/aboutArray.json"; // j'ai créé un fichier JSON avec les données des collapses
 import styles from "../style/modules_css/Collapse.module.css";
 
-
 function About() {
     return(
         <>

@@ -24,7 +24,6 @@ function Rating(props) {
 					/>
 				)
             )}
-
         </div>
     )
 }

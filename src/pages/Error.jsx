@@ -1,10 +1,8 @@
 import {Link} from "react-router-dom";
 import styles from "../style/modules_css/Error.module.css";
 
-
 function Error() {
     return (
-        
         <>
             <div className= {styles.error}>
                 <p className={styles.error_number}>404</p>
@@ -16,7 +14,5 @@ function Error() {
         </>
     )
 }
-
-
 
 export default Error

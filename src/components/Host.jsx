@@ -1,7 +1,5 @@
 import styles from '../style/modules_css/Host.module.css';
 
-
-
 function Host(props) {
     const name = props.name;
     const picture = props.picture;

@@ -9,21 +9,18 @@ function Home() {
         <>
             <Banner />
             <div className= {styles.home_section}>
-            <div className= {styles.cardSection}>
-                {datas.map((product) => {
-                    return (
-                        <Link key={product.id} to= {`/product/${product.id}`}>
-                            <Card cover={product.cover} title={product.title}/>
-                        </Link>    
-                    )
-            })}  
+                <div className= {styles.cardSection}>
+                    {datas.map((product) => {
+                        return (
+                            <Link key={product.id} to= {`/product/${product.id}`}>
+                                <Card cover={product.cover} title={product.title}/>
+                            </Link>    
+                        )
+                    })}  
                 </div>
-                
             </div>  
         </>
     )
 }
-
-
 
 export default Home

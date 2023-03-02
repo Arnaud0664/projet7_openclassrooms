@@ -7,10 +7,7 @@ function Footer() {
             <img src={logo} alt= "logo Kasa" className= {styles.footer_logo} />
             <p className= {styles.footer_text}>© 2020 Kasa. All rights reserved</p>
         </div>
-        
     )
-
-
 }
 
 export default Footer;
