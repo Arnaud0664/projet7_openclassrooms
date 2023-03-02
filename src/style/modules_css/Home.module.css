@@ -10,10 +10,9 @@
     background: #F7F7F7;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 25px;
-    padding-top: 75px;
+    padding: 50px;
     margin-top: 40px;
-    gap: 3px;
 }
 }
