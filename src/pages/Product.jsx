@@ -24,7 +24,7 @@ function Product() {
             <div>
                 <Slide pictures= {product.pictures}/>
             </div>
-            <div className= {styles.desktopDisplay}>
+            <div className= {styles.infoBlock}>
                 <div>
                     <h1 className= {styles.h1Product}>{product.title}</h1>
                     <h2 className= {styles.h2Product}>{product.location}</h2>

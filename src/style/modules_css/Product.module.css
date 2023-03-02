@@ -1,4 +1,11 @@
 
+.infoBlock {
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .h1Product {
     color: #ff6060;
     font-size: 18px;
@@ -25,7 +32,8 @@
 }
 
 .collapseBlock_product {
-    height: 275px;
+    height: auto;
+    margin-bottom: 50px
 }
 
 li {
@@ -46,15 +54,12 @@ height: 25px;
     height: 10px;
 }
 
-.desktopDisplay {
-    display: flex;
+.infoBlock {
     flex-direction: column;
 }
 
 .hostBlock {
-    position: absolute;
-    width: 89.8%;
-    margin-top: 90px;
+    margin-top: -60px;
     flex-direction: column-reverse;
     align-items: flex-end;
 }
@@ -63,6 +68,7 @@ height: 25px;
     display: flex;
     flex-direction: row;
     gap: 5%;
+    margin-top: 30px;
 }
 }
 

@@ -4,10 +4,6 @@
     margin-bottom: 30%;
 }
 
-.collapseBlock_product {
-    height: 300px;
-}
-
 .collapse .toggle {
     display: flex;
     justify-content: space-between;
@@ -20,7 +16,7 @@
     padding: 7px 15px;
     border-radius: 5px;
     border: unset;
-    margin: 30px auto 0;
+    margin-bottom: 20px;
 }    
     
 .h3 {
@@ -29,12 +25,13 @@
 }
 
 .collapse .content_block {
-    height: 0px; 
+    height: 249px; 
     overflow: hidden; 
     transition: height ease 0.3s;
 }
 
 .collapse .content {
+    height: 249px;
     color: #ff6060;
     background: #f7f7f7;
     border-radius: 5px;
