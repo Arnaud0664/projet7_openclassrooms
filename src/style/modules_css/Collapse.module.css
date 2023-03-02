@@ -1,6 +1,7 @@
 
 .collapseBlock_about {
-    height: 380px;
+    height: auto;
+    margin-bottom: 30%;
 }
 
 .collapseBlock_product {
