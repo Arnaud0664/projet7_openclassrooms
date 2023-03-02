@@ -5,6 +5,7 @@ function AboutBanner() {
     return (
         <div className= {styles.aboutBanner}>
             <img src= {aboutImg} alt= 'paysage de montagne' className= {styles.aboutImg} />
+            <div className= {styles.aboutBanner_layer}></div>
         </div>
     )
 }

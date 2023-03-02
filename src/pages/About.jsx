@@ -9,11 +9,11 @@ function About() {
         <>
             <AboutBanner />
 			<div className= {styles.collapseBlock_about}>
-				{aboutArray.map((rule, id) => (
+				{aboutArray.map((element, id) => (
 					<Collapse
 						key={id}
-						aboutTitle={rule.aboutTitle}
-						aboutText={rule.aboutText}
+						aboutTitle={element.aboutTitle}
+						aboutText={element.aboutText}
 					/>
 				))}
 			</div>

@@ -61,8 +61,8 @@ height: 25px;
 
 .collapseBlock_product {
     display: flex;
-    justify-content: space-between;
-    height: 300px;
+    flex-direction: row;
+    gap: 5%;
 }
 }
 
