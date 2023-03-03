@@ -1,9 +1,9 @@
 import {useState} from "react";
-import styles from '../style/modules_css/Slide.module.css';
+import styles from '../style/modules_css/Gallery.module.css';
 import leftArrow from '../assets/slideG.png';
 import rightArrow from '../assets/slideD.png';
 
-function Slide(props) {
+function Gallery(props) {
     const pictures = props.pictures;
     const length = pictures.length;
 
@@ -46,7 +46,7 @@ function Slide(props) {
                             className= {styles.pictures} 
                         />
                     }
-                    {index === currentIndex && (
+                    {index === currentIndex && length >1 && (
 						<span className= {styles.slider_number}>
 							{currentIndex + 1}/{length}
 						</span>
@@ -57,4 +57,4 @@ function Slide(props) {
     )
 }
 
-export default Slide
+export default Gallery

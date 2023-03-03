@@ -3,7 +3,7 @@ import Collapse from '../components/Collapse';
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
 import Host from '../components/Host';
-import Slide from '../components/Slide';
+import Gallery from '../components/Gallery';
 import styles from '../style/modules_css/Product.module.css';
 import datas from '../datas/datas.json';
 
@@ -22,7 +22,7 @@ function Product() {
     return(
         <>
             <div>
-                <Slide pictures= {product.pictures}/>
+                <Gallery pictures= {product.pictures}/>
             </div>
             <div className= {styles.infoBlock}>
                 <div>
