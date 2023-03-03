@@ -3,8 +3,8 @@ import Chevron from "../assets/flecheBas.png";
 import styles from "../style/modules_css/Collapse.module.css";
 
 function Collapse (props) {
-    const [isOpen, setIsOpen] = useState(false); //useRef = equivalent de "this" en js
-    const collapseRef = useRef(); //get infos of the opened Collapse
+    const [isOpen, setIsOpen] = useState(false); // état ouvert ou fermé
+    const collapseRef = useRef(); // useRef = equivalent de "this" en js, ici = valeurs des collapses ouverts
 
     return (
         <div className= {styles.collapse}>
@@ -19,8 +19,8 @@ function Collapse (props) {
             <div
                 className= {styles.content_block}
                 ref={collapseRef}
-                // conditionnal height: if opened then actual height as defined by parent.ref DOM element, 
-                // 0px otherwise - note that in REACt style is an Objet
+                // si ouvert : hauteur définit par la valeur collapseRef = content_block_height 
+                // sinon hauteur de 0px
                 style={
                     isOpen ? {
                         height: collapseRef.current.scrollHeight + "px"
