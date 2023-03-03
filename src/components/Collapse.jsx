@@ -4,7 +4,7 @@ import styles from "../style/modules_css/Collapse.module.css";
 
 function Collapse (props) {
     const [isOpen, setIsOpen] = useState(false); // état ouvert ou fermé
-    const collapseRef = useRef(); // useRef = equivalent de "this" en js, ici = valeurs des collapses ouverts
+    const collapseRef = useRef(); // 
 
     return (
         <div className= {styles.collapse}>
@@ -19,8 +19,7 @@ function Collapse (props) {
             <div
                 className= {styles.content_block}
                 ref={collapseRef}
-                // si ouvert : hauteur définit par la valeur collapseRef = content_block_height 
-                // sinon hauteur de 0px
+                // si ouvert : hauteur définit par la propriété current de collapseRef = scrollHeight (mesure de la hauteur de l'élément)
                 style={
                     isOpen ? {
                         height: collapseRef.current.scrollHeight + "px"

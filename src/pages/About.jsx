@@ -1,6 +1,6 @@
 import AboutBanner from "../components/AboutBanner";
 import Collapse from "../components/Collapse";
-import aboutArray from "../datas/aboutArray.json"; // j'ai créé un fichier JSON avec les données des collapses
+import aboutArray from "../datas/aboutArray.json"; // fichier json créé avec les données des collapses
 import styles from "../style/modules_css/Collapse.module.css";
 
 function About() {
@@ -11,7 +11,7 @@ function About() {
 				{aboutArray.map((element, id) => (
 					<Collapse
 						key={id}
-						aboutTitle={element.aboutTitle}
+						aboutTitle={element.aboutTitle} // données du fichier json
 						aboutText={element.aboutText}
 					/>
 				))}

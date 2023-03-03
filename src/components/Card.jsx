@@ -1,6 +1,8 @@
 import styles from '../style/modules_css/Card.module.css';
 
-function Card({cover, title}) {
+function Card(props) {
+    const cover = props.cover;
+    const title = props.title;
     return (
                 <div className= {styles.card_block}>
                     <img src={cover} alt="biens immobilier" className={styles.card_img}/>

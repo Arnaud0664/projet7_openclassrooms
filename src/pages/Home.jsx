@@ -12,8 +12,8 @@ function Home() {
                 <div className= {styles.cardSection}>
                     {datas.map((product) => {
                         return (
-                            <Link key={product.id} to= {`/product/${product.id}`}>
-                                <Card cover={product.cover} title={product.title}/>
+                            <Link key={product.id} to= {`/product/${product.id}`}> 
+                                <Card cover={product.cover} title={product.title} />
                             </Link>    
                         )
                     })}  

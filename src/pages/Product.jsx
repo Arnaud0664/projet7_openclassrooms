@@ -13,6 +13,7 @@ function Product() {
 	if (product === undefined) return <Navigate to="/error" />
     
     const equipments = product.equipments;
+
     const equipmentsList = equipments.map((element, index) =>
         <li key={index} className= {styles.li}>
             {element}
@@ -32,7 +33,7 @@ function Product() {
                 <div className= {styles.tagsBlock}>  
                     {product.tags.map((tag) => {
                         return (   
-                            <Tags key= {tag} content= {tag}/> // content = props
+                            <Tags key= {tag} content= {tag}/> // content = prop
                         )
                     })}   
                 </div>

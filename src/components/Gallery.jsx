@@ -7,10 +7,11 @@ function Gallery(props) {
     const pictures = props.pictures;
     const length = pictures.length;
 
-    const [currentIndex,setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    
     const goToNext = () => {
-        const isLastSlide = currentIndex === length -1;
-        const newIndex = isLastSlide ? 0 : currentIndex +1;
+        const isLastSlide = currentIndex === length -1;     
+        const newIndex = isLastSlide ? 0 : currentIndex +1; 
         setCurrentIndex(newIndex);
     }
     const goToPrevious = () => {
@@ -20,8 +21,8 @@ function Gallery(props) {
     }
     
     return (
-        <div className= {styles.slideBlock}>
-            {length > 1 && (
+        <div className= {styles.slideBlock}> 
+            {length > 1 && ( // n'affiche pas les flèches de navigation s'il n'y a q'un seul élément
                 <img 
                     src= {leftArrow} 
                     alt= "flèche gauche" 
@@ -46,7 +47,7 @@ function Gallery(props) {
                             className= {styles.pictures} 
                         />
                     }
-                    {index === currentIndex && length >1 && (
+                    {index === currentIndex && length >1 && ( // n'affiche pas de numéro s'il n'y a q'un seul élément
 						<span className= {styles.slider_number}>
 							{currentIndex + 1}/{length}
 						</span>
