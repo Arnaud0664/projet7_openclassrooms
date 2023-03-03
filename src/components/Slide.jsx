@@ -21,18 +21,22 @@ function Slide(props) {
     
     return (
         <div className= {styles.slideBlock}>
-            <img 
-                src= {leftArrow} 
-                alt= "flèche gauche" 
-                className= {styles.leftArrow}
-                onClick= {goToPrevious} 
-            /> 
-            <img 
-                src= {rightArrow} 
-                alt= "flèche droite" 
-                className= {styles.rightArrow} 
-                onClick= {goToNext} 
-            />
+            {length > 1 && (
+                <img 
+                    src= {leftArrow} 
+                    alt= "flèche gauche" 
+                    className= {styles.leftArrow}
+                    onClick= {goToPrevious} 
+                />
+            )}
+            {length > 1 && (
+                <img 
+                    src= {rightArrow} 
+                    alt= "flèche droite" 
+                    className= {styles.rightArrow} 
+                    onClick= {goToNext} 
+                />
+            )}
             {pictures.map((picture, index) => (
                 <div key= {index} className= {styles.slider}>
                     {index === currentIndex &&
