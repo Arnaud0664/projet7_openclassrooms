@@ -33,7 +33,7 @@ function Product() {
                 <div className= {styles.tagsBlock}>  
                     {product.tags.map((tag) => {
                         return (   
-                            <Tags key= {tag} content= {tag}/> // content = prop
+                            <Tags key= {tag} content= {tag}/> 
                         )
                     })}   
                 </div>

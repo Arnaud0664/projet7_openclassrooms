@@ -7,7 +7,7 @@ import Product from './pages/Product';
 import Footer from './components/Footer'
 import Error from './pages/Error';
 import './style/css/index.css';
-                                            // routeur avec 4 routes et 2 composants
+                                            
 function App() {
     return ( 
         <main> 
