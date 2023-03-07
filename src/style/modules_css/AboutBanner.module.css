@@ -29,6 +29,7 @@
 @media screen and (min-width: 768px){
 
 .aboutBanner {
-    border-radius: 25px; 
+    border-radius: 25px;
+    margin: 49.36px 100px 0 100px;
 }
 }
