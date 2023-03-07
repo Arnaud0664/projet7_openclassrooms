@@ -4,6 +4,7 @@
     display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+    margin: 0 20px 0 20px;
 }
 
 .h1Product {
@@ -33,7 +34,7 @@
 
 .collapseBlock_product {
     height: auto;
-    margin-bottom: 50px
+    margin: 0 20px 50px 20px;
 }
 
 li {
