@@ -1,7 +1,7 @@
 import {useState} from "react";
 import styles from '../style/modules_css/Gallery.module.css';
-import leftArrow from '../assets/slideG.png';
-import rightArrow from '../assets/slideD.png';
+import leftArrow from '../assets/flecheG_grande.png';
+import rightArrow from '../assets/flecheD_grande.png';
 
 function Gallery(props) {
     const pictures = props.pictures;

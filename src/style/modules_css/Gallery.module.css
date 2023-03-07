@@ -74,10 +74,12 @@
 .leftArrow {
     width: 46.68px;
     height: 79.2px;
+    left: 23px;
 }
 
 .rightArrow {
     width: 46.68px;
     height: 79.2px;
+    right: 23px;
 }
 }
