@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import { useState, useRef } from "react"; //import des hooks de base react
 import Chevron from "../assets/flecheBas.png";
 import styles from "../style/modules_css/Collapse.module.css";
@@ -6,10 +7,14 @@ function Collapse (props) {
     const [isOpen, setIsOpen] = useState(false); // état ouvert ou fermé
     const collapseRef = useRef(); // 
 
+    const location = useLocation();
+	const { pathname } = location;
+	const splitLocation = pathname.split("/");
+
     return (
         <div className= {styles.collapse}>
             <button className={styles.toggle} onClick={() => setIsOpen(!isOpen)}>
-                <h3 className= {styles.h3}>{props.aboutTitle}{props.productTitle}</h3>
+                <h3 className={splitLocation[1] === "about" ? styles.h3_about : styles.h3}>{props.aboutTitle}{props.productTitle}</h3>
                 <img
 					className={isOpen ? styles.rotation : styles.chevron}
 					src={Chevron}
@@ -30,7 +35,7 @@ function Collapse (props) {
                 }
             >
                 <div className= {styles.content}>
-                    <p className= {styles.collapse_text}>{props.aboutText}{props.description}{props.content}</p>
+                    <p className= {splitLocation[1] === "about" ? styles.collapse_text_about : styles.collapse_text}>{props.aboutText}{props.description}{props.content}</p>
                 </div>
             </div>
         </div>
