@@ -14,7 +14,7 @@ function Header() {
 
     return (
         <header className= {styles.header}>
-            <img src={logo} alt= "logo Kasa" />
+            <img src={logo} alt= "logo Kasa" className= {styles.header_logo}/>
             <nav className= {styles.header_nav}>
 			
 				<Link to="/" className={splitLocation[1] === "" ? styles.currentStyle : styles.a}>

@@ -21,6 +21,11 @@
 
 @media screen and (min-width: 768px) {
 
+.footer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .footer_logo {    
 width: 122px;
 height: 39.44;
