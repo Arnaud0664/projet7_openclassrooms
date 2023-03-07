@@ -1,8 +1,13 @@
 
-a {
+.a {
     color: #FF6060;
+    text-decoration: none;
 }
 
+.a :visited {
+    color: #FF6060;
+    text-decoration: none;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +28,11 @@ a {
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.currentStyle {
+    color: #ff6060;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 768px){

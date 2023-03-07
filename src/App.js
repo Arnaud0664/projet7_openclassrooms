@@ -13,7 +13,7 @@ function App() {
         <main> 
             <Header />
             <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/product/:id" element={<Product />} />
                 <Route path="*" element={<Error />} />
