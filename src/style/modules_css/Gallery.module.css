@@ -59,6 +59,7 @@
 .slideBlock { 
     height: 415px;
     border-radius: 25px;
+    margin: 20px 100px 0 100px;
 }
 
 .slider_number {

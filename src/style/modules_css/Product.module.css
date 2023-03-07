@@ -57,6 +57,7 @@ li {
 
 .infoBlock {
     flex-direction: column;
+    margin: 0 100px 0 100px;
 }
 
 .hostBlock {
@@ -69,7 +70,7 @@ li {
     display: flex;
     flex-direction: row;
     gap: 5%;
-    margin-top: 30px;
+    margin: 30px 100px 0 100px;
 }
 }
 
