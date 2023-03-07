@@ -37,6 +37,9 @@
 
 @media screen and (min-width: 768px){
 
+.header {
+    margin: 40px 100px 0 100px;
+}
 .header_nav {
     width: 290px;
     font-size: 24px;
