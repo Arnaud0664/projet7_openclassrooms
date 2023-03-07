@@ -8,8 +8,7 @@ function Collapse (props) {
     const collapseRef = useRef(); // 
 
     const location = useLocation();
-	const { pathname } = location;
-	const splitLocation = pathname.split("/");
+	const splitLocation = location.pathname.split("/");
 
     return (
         <div className= {styles.collapse}>

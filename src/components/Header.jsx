@@ -5,13 +5,8 @@ import styles from '../style/modules_css/Header.module.css';
 
 function Header() {
 	const location = useLocation();
-	const { pathname } = location;
-	const splitLocation = pathname.split("/");
+	const splitLocation = location.pathname.split("/");
 	
-		
-
-
-
     return (
         <header className= {styles.header}>
             <img src={logo} alt= "logo Kasa" className= {styles.header_logo}/>
