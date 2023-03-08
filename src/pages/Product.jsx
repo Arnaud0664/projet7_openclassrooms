@@ -26,7 +26,7 @@ function Product() {
                 <Gallery pictures= {product.pictures}/>
             </div>
             <div className= {styles.infoBlock}>
-                <div>
+                <div className= {styles.h1_block}>
                     <h1 className= {styles.h1Product}>{product.title}</h1>
                     <h2 className= {styles.h2Product}>{product.location}</h2>
                 </div>

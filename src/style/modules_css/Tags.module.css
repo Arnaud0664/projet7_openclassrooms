@@ -7,6 +7,7 @@
     Height: 18px;
     color: white;
     font-size: 10px;
+    font-weight: 500;
     border-radius: 5px;
     background-color: #ff6060;
     margin-right: 10px;
@@ -19,5 +20,6 @@
     Height: 25px;
     font-size: 14px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 }

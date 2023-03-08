@@ -9,11 +9,13 @@
 .h1Product {
     color: #ff6060;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .h2Product {
     color: #ff6060;
     font-size: 14px;
+    font-weight: 500;
 }
 
 .tagsBlock {
@@ -42,10 +44,19 @@ li {
 
 @media screen and (min-width: 768px) {
 
+.tagsBlock {
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.h1_block {
+    width: 80%;
+}
+
 .h1Product {
     font-size: 36px;
     font-weight: 500;
-    height: 25px;
+    height: 62px;
 }
 
 .h2Product {
@@ -60,7 +71,7 @@ li {
 }
 
 .hostBlock {
-    margin-top: -60px;
+    margin-top: -75px;
     flex-direction: column-reverse;
     align-items: flex-end;
 }
@@ -69,34 +80,13 @@ li {
     display: flex;
     flex-direction: row;
     gap: 5%;
-    margin: 30px 100px 0 100px;
+    margin: 0 100px 0 100px;
 }
 }
 
+@media screen and (min-width: 992px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.h1Product {
+    height: 25px;
+}
+}
