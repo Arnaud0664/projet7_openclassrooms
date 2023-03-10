@@ -9,17 +9,17 @@ import Error from './pages/Error';
 import './style/css/index.css';
                                             
 function App() {
-    return ( 
-        <main> 
-            <Header />
+    return (  
+        <><Header />
+        <main>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/product/:id" element={<Product />} />
                 <Route path="*" element={<Error />} />
             </Routes>
-            <Footer />     
-        </main>   
+        </main>
+        <Footer /></>    
     );
 }
 
